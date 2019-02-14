@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="index.css">
+	<meta charset="utf-8" />
+	<title>Table Style</title>
+	<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+
+<body>
+<div class="table-title">
+<h3>Eleição do presidente do grêmio</h3>
+</div>
+<table class="table-fill">
+<thead>
+<tr>
+<th class="text-left">Candidatos</th>
+<th class="text-left">Número de votos</th>
+</tr>
+</thead>
+<tbody class="table-hover">
+<tr>
+<td class="text-left">Germano</td>
+<td id="candidato-1"></td>
+</tr>
+<tr>
+<td class="text-left">Carla</td>
+<td id="candidato-2"></td>
+</tr>
+<tr>
+<td class="text-left">Jose</td>
+<td id="candidato-3"></td>
+</tr>
+</tbody>
+</table>
+<div class = "botao">
+	<input type="text" id="candidate" />
+	<a href="#" onclick="voteForCandidate()" class="btn btn-primary">Votar</a>
+</div>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+</html>
